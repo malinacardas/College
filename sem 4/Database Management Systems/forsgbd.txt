@@ -1,0 +1,371 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System;
+using System.Data;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace WindowsFormsApp2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        
+        SqlConnection dbConn;
+        SqlDataAdapter daShoes, daShoeModel;
+        DataSet ds;
+        SqlCommandBuilder cb;
+        BindingSource bsShoes, bsShoeModel;
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dbConn = new SqlConnection(@"Data Source = DESKTOP-5D3GS7E\SQLEXPRESS; Initial Catalog = shop; Integrated Security = true");
+            ds = new DataSet();
+            daShoes = new SqlDataAdapter("SELECT * FROM shoes", dbConn);
+            daShoeModel = new SqlDataAdapter("SELECT * FROM shoe_model", dbConn);
+            //SqlCommandBuilder cb = new SqlCommandBuilder(daAnimals);
+            daShoes.Fill(ds, "shoe");
+            daShoeModel.Fill(ds, "shoe_model");
+            ds.Relations.Add("Relation", ds.Tables["shoe_model"].Columns["id"], ds.Tables["shoe"].Columns["id"]);
+            bsShoeModel = new BindingSource();
+            bsShoeModel.DataSource = ds;
+            bsShoeModel.DataMember = "shoe_model";
+            bsShoes = new BindingSource();
+            bsShoes.DataSource = bsShoeModel;
+            bsShoes.DataMember = "Relation";
+            dataGridView1.DataSource = bsShoeModel;
+            dataGridView2.DataSource = bsShoes;
+        }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            daShoes.Update(ds, "shoe");
+        }
+
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Refresh();
+            dataGridView2.Refresh();
+        }
+    }
+}
+----appconfig
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="WindowsFormsApp2.Properties.Settings.shopConnectionString"
+            connectionString="Data Source=DESKTOP-5D3GS7E\SQLEXPRESS;Initial Catalog=shop;Integrated Security=True"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+    </startup>
+</configuration>
+
+---the other web form
+--appconfig
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+    </startup>
+  <appSettings>
+    <add key="ParentTable" value="woman"></add>
+    <add key="ChildTable" value="aquisitions"></add>
+    <add key="ParentField" value="id"></add>
+    <add key="ChildField" value="womanId"></add>
+    <add key="Connection" value="Data Source=DESKTOP-5D3GS7E\SQLEXPRESS;Initial Catalog=shop;Integrated Security=True"/>
+
+    <!--<add key="ParentTable" value="shoe_model"></add>
+    <add key="ChildTable" value="shoes"></add>
+    <add key="ParentField" value="id"></add>
+    <add key="ChildField" value="modelId"></add>
+    <add key="Connection" value="Data Source=DESKTOP-5D3GS7E\SQLEXPRESS;Initial Catalog=shop;Integrated Security=True"/>-->
+
+  </appSettings>
+</configuration>
+--form cs
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System;
+using System.Data;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
+
+namespace ShoeDB
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            
+            Connection = ConfigurationManager.AppSettings["Connection"];
+            ParentName = ConfigurationManager.AppSettings["ParentTable"];
+            ChildName = ConfigurationManager.AppSettings["ChildTable"];
+            ParentField = ConfigurationManager.AppSettings["ParentField"];
+            ChildField = ConfigurationManager.AppSettings["ChildField"];
+
+            InitializeComponent();
+        }
+
+        SqlConnection dbConn;
+        SqlDataAdapter daShoes, daShoeModel;
+        DataSet ds;
+        SqlCommandBuilder cb;
+        BindingSource bsShoes, bsShoeModel;
+        private string Connection;
+        private string ParentName;
+        private string ChildName;
+        private string ParentField;
+        private string ChildField;
+
+       
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dbConn = new SqlConnection(Connection);
+            ds = new DataSet();
+            daShoes = new SqlDataAdapter("SELECT * FROM " + ParentName,dbConn);
+            daShoeModel = new SqlDataAdapter("SELECT * FROM " + ChildName,dbConn);
+            SqlCommandBuilder cb = new SqlCommandBuilder(daShoes);
+            daShoes.Fill(ds, ParentName);
+            daShoeModel.Fill(ds, ChildName);
+            ds.Relations.Add("Relation2", ds.Tables[ParentName].Columns[ParentField], ds.Tables[ChildName].Columns[ChildField]);
+            bsShoeModel = new BindingSource();
+            bsShoeModel.DataSource = ds;
+            bsShoeModel.DataMember = ParentName;
+            bsShoes = new BindingSource();
+            bsShoes.DataSource = bsShoeModel;
+            bsShoes.DataMember = "Relation2";
+            dataGridView1.DataSource = bsShoeModel;
+            dataGridView2.DataSource = bsShoes;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            daShoes.Update(ds, ChildName);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Refresh();
+            dataGridView2.Refresh();
+        }
+    }
+}
+------insert tables
+use CarTraffic
+go
+
+if object_id('CarsRoads', 'U') is not null
+	drop table CarsRoads
+if object_id('Drivers', 'U') is not null
+	drop table Drivers
+if object_id('Roads', 'U') is not null
+	drop table Roads
+if object_id('TypeRoads', 'U') is not null
+	drop table TypeRoads
+if object_id('Cars', 'U') is not null
+	drop table Cars 
+
+create table Cars(
+	CId int primary key identity(1, 1),
+	CaBrand varchar(50),
+	CaBrandType varchar(100),
+	CaNoPlaces smallint,
+	CaFabricationYear smallint
+)
+
+create table TypeRoads(
+	TRId smallint primary key identity(1, 1),
+	RTName varchar(50),
+	RTQuality varchar(50),
+	RTAverageLength int
+)
+
+create table Roads(
+	RId int primary key identity(1, 1),
+	RName varchar(50),
+	RLength varchar(100),
+	RBeginCity varchar(50),
+	REndCity varchar(50),
+	TypeId smallint references TypeRoads(TRId)
+)
+
+create table Drivers(
+	DId int primary key identity(1, 1),
+	DName varchar(50),
+	DExperience int,
+	RoadId int references Roads(RId)
+)
+
+create table CarsRoads(
+	CId int references Cars(CId),
+	RId int references Roads(RId),
+	DrivingMoment datetime,
+	NoCars int,
+	primary key(CId, RId, DrivingMoment)
+)
+
+
+insert into TypeRoads values('rt1', 'low', 34), ('rt2', 'high', 340), ('rt3', 'medium', 3004)
+insert into Roads values('r1', 123, 's1', 'e1', 1), ('r2', 123, 's1', 'e1', 2), ('r3', 123, 's1', 'e1', 3)
+insert into Drivers values('d1', 3, 1)
+
+--concurrency issues part 1
+/* create scenarios that reproduce some concurrency issues 
+	this is the file where we have the T1 transactions aka the transactions that may or may not cause an issue, within different isolation levels */
+
+-- T1 = starts first
+
+-- 1) Dirty reads
+	-- T1 = update + delay + rollback
+
+BEGIN TRANSACTION
+UPDATE Superheroes set alterEgo = 'Batgirl' where secretIdentity = 'Barbara Gordon'
+WAITFOR DELAY '00:00:10'
+ROLLBACK TRANSACTION
+
+-- 2) Dirty reads
+	-- T1 = insert + delay + update + commit
+
+INSERT INTO Superheroes(secretIdentity, alterEgo, species, homeBase) VALUES ('Scott Summers','Cyclops','Mutant','New York')
+BEGIN TRANSACTION
+WAITFOR DELAY '00:00:15'
+UPDATE Superheroes set homeBase = 'Xavier School for the Gifted' WHERE secretIdentity='Scott Summers'
+COMMIT TRANSACTION
+
+-- 3) Phantom reads
+	-- T1 = delay + insert + commit
+
+BEGIN TRANSACTION
+WAITFOR DELAY '00:00:15'
+INSERT INTO Superheroes(secretIdentity, alterEgo, species, homeBase) VALUES ('Ororo Munroe','Storm','Mutant','New York')
+COMMIT TRANSACTION
+
+-- 4) Deadlock
+	-- T1 = update + delay + update
+
+BEGIN TRANSACTION
+UPDATE Superheroes SET alterEgo = 'Batgirl' WHERE secretIdentity = 'Barbara Gordon'
+-- exclusive lock on Superheroes
+WAITFOR DELAY '00:00:10'
+-- T2 called
+UPDATE Teams SET base = 'Asgard' WHERE name = 'The Revengers'
+COMMIT TRANSACTION
+
+---part 2
+/* create scenarios that reporduce some concurrency issues
+	this is the file where we have the T2 transactions, where the isolation levels are set */
+
+-- T2 = starts right after T1
+
+-- 1) Dirty reads = occur when a transaction is allowed to read data from a row that has been modified by another running transaction but not yet committed
+	-- T2 = select + delay + select
+
+-- T2 - dirty reads happen under isolation level read uncommited
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+BEGIN TRANSACTION
+SELECT * FROM Superheroes -- value will be displayed as the updated one => "Dirty read"
+WAITFOR DELAY '00:00:15'
+SELECT * FROM Superheroes -- value will be displayed as it actually is in the database, not updated, due to rolling back in T1
+COMMIT TRANSACTION
+
+-- Solution => read committed (guarantees that any data read was committed at the moment is read)
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+BEGIN TRANSACTION
+SELECT * FROM Superheroes -- value unchanged
+WAITFOR DELAY '00:00:25'
+SELECT * FROM Superheroes -- value unchanged
+COMMIT TRANSACTION
+
+-- 2) Non-repeatable reads = occur when, during the course of a transaction, a row is retrieved twice and the values within the row differ between reads
+	-- T2 = select + delay + select
+
+-- T2 - non repeatable reads happen under isolation level read committed
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+BEGIN TRANSACTION
+SELECT * FROM Superheroes
+WAITFOR DELAY '00:00:25'
+SELECT * FROM Superheroes
+COMMIT TRANSACTION
+
+-- Solution => repeatable read isolation level
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+BEGIN TRANSACTION
+SELECT * FROM Superheroes
+WAITFOR DELAY '00:00:25'
+SELECT * FROM Superheroes
+COMMIT TRANSACTION
+
+-- 3) Phantom reads = occur when, in the course of a transaction, new rows are added or removed by another transaction to the records being read
+	-- T2 = select + delay + select
+
+-- T2 - phantom reads happen under isolation level repeatable read
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+BEGIN TRANSACTION
+SELECT * FROM Superheroes
+WAITFOR DELAY '00:00:25'
+SELECT * FROM Superheroes
+COMMIT TRANSACTION
+
+-- Solution => serializable isolation level
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+BEGIN TRANSACTION
+SELECT * FROM Superheroes
+WAITFOR DELAY '00:00:25'
+SELECT * FROM Superheroes
+COMMIT TRANSACTION
+
+-- 4) Deadlock = occurs when 2 processes are competing for exlusive access to a resource but is unable to obtain it, because the other process is preventing it
+	-- there is no isolation 
+
+-- T2 - deadlocks happen even under any isolation level
+BEGIN TRANSACTION
+UPDATE Superheroes SET secretIdentity = 'Dinah Drake' WHERE alterEgo = 'Black Canary'
+WAITFOR DELAY '00:00:10'
+-- exclusive lock on Superheroes
+UPDATE Teams SET base = 'The Aeries' WHERE name = 'Birds of Prey'
+-- this will be blocked by T1, both are blocked by T1 and T2
+COMMIT TRANSACTION 
+-- T2 will be terminated as deadlock victim and the values that remain are the ones from T1
+
+-- Solution => set deadlock_priorty as HIGH
+SET DEADLOCK_PRIORITY HIGH
+BEGIN TRANSACTION
+UPDATE Superheroes SET secretIdentity = 'Dinah Drake' WHERE alterEgo = 'Black Canary'
+WAITFOR DELAY '00:00:10'
+UPDATE Teams SET base = 'The Aeries' WHERE name = 'Birds of Prey'
+-- T1 will be terminated as deadlock victim and the values that remain are the ones from T2
+COMMIT TRANSACTION 

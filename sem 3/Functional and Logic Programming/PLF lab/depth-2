@@ -1,0 +1,21 @@
+;depth of a tree of type 2
+(defun postorder (tree level)
+(cond 
+((null tree) level)
+(t (max (postorder (cadr tree) (+ level 1))
+(postorder (caddr tree) (+ level 1))))
+)
+)
+;(write(postorder '(a (b) (c (d) (e)))'0))
+
+
+
+(defun inorder(tree)
+(cond
+((null tree) nil)
+(t (append (inorder (cadr tree))
+	(append (list (car tree)) (inorder (caddr tree)))
+)
+)
+))
+(write (inorder '(a(b(c))(d(e)(f)))))

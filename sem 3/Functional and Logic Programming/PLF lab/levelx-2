@@ -1,0 +1,10 @@
+;level of x in a tree
+(defun xlevel (tree level x)
+(cond
+((null tree) nil)
+((equal x (car tree)) ( list level))
+(t(append (xlevel (cadr tree) (+ 1 level ) x)
+          (xlevel (caddr tree) (+ 1 level) x)
+))
+))
+(write(xlevel '(a (b(c))(d(e)(f)))'0'e))

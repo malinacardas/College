@@ -1,0 +1,21 @@
+;l1-9d
+;write a fcuntion to return the greatest common divisor of all numbers in a linear list
+;gcdList(l1,l2,...,ln)=(0, if n=0
+;                     =l1+gcdList(l2,l3,...,ln)
+(defun gcdElem (a b)
+(cond 
+((< a b) (gcdElem b a))
+((= b 0) a)
+(t (gcdElem b (mod a b)))
+)
+)
+
+(defun gcdList (l)
+(cond 
+((null l) 0)
+((numberp (car l)) (gcdElem (car l) (gcdList (cdr l))))
+(t (gcdList (cdr l)))
+)
+)
+
+(write(gcdList '(2 4 6 8)))

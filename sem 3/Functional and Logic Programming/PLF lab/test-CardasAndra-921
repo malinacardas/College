@@ -1,0 +1,24 @@
+;1
+;sa se det toate elem nenumerice dintr-o lista
+;notnum(L:list)
+;notnum(l1,l2,...,ln)={[],L=[]
+;                      l1 U notnum(l2,...,ln),if l1-not number
+;                      notnum(l2,...,ln), if l1-number }
+
+(defun notnum (l)
+(cond
+((null l) nil)
+;((numberp (car l)) )
+;((and(listp (car l)) (not(numberp(car (car l))))) (notnum(cdr l))) 
+
+((not(numberp (car l))) (append (list (car l)) (notnum (cdr l))))
+
+;((and(not(numberp (car l)))(not(listp (car l)))) (append (list (car l)) (notnum(cdr l))))
+;((and(not(numberp (car l))) (listp (car l)))
+;      (append (list (car l)) (notnum(cdr (car l)))))
+
+(t
+ (append (notnum(cdr l))))
+))
+
+(write (reverse(notnum '(1 2 (a  b) c (d ) 4 5 x (e (f))))))

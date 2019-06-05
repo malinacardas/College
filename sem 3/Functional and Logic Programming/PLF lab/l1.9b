@@ -1,0 +1,17 @@
+;l1-9b
+;write a function to replace an element E by all elements of a list L1 at all levels of a given list L
+;replaceElem(l1,l2...,ln,k1,k2,...km,elem)=(nil, if n=0
+;                                         =(replaceElem(k1,k2,...,km,l2,l3,...,ln,elem), if l1=elem
+(defun replaceElem(l l1  elem)
+(cond
+((null l) nil)
+((listp (car l))
+    (cons (l (replaceElem (car l) l1 elem)) (replaceElem (cdr l) l1 elem)))
+;((not (equal (car l) elem))
+;    (append (list (car l)) (replaceElem (cdr l) l1 elem)))
+((equal (car l) elem)
+   (cons l1  (replaceElem (cdr l) l1 elem)))
+(t (cons (list (car l)) (replaceElem (cdr l) l1 elem)))
+)
+)
+(write(replaceElem '(3 2 3)'(5 0)'3))

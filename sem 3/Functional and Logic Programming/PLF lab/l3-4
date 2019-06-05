@@ -1,0 +1,16 @@
+;product of numeric atoms on any level
+;sum(l:list)
+;sum(l1,l2..,ln)={1, if L=[]
+;                 l1, if L=[l1]
+;                 1, if L has only a nonnumeric atom
+;	          l1*sum(l2,..,ln)}
+(defun sum(l)
+(cond
+((null l) 1)
+((numberp l) l)
+((atom l) 1)
+(t
+ (apply '*(mapcar 'sum l)))
+))
+
+(write (sum '(9 1 (a b c 8) 2 d)))

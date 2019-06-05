@@ -1,0 +1,8 @@
+;delete every elem on n to n positions
+(defun deleteN(list pc n)
+(cond
+((null list) nil)
+((equal 0 (mod pc n)) (cons (car list) (deleteN (cdr list) (+ 1 pc) n)))
+(t (deleteN (cdr list) (+ 1 pc) n))
+))
+(write(deleteN '(1 2 3 4 5 6 7 8)'0'2))

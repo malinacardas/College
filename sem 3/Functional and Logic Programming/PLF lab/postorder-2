@@ -1,0 +1,15 @@
+;15.Determine the list of nodes accesed in postorder in a tree of type (2)
+;postorder(tree:list)
+;postorder(l1,l2,l3...,ln)={ [],if L=[]
+;			    postorder(l2,l3,..,ln) U postorder (l3,l4,..,ln) U l1
+;                          }
+(defun postorder(tree)
+(cond
+((null tree) nil)
+(t (append (postorder (cadr tree))
+           (append (postorder (caddr tree)) (list (car tree)))
+))
+)
+)
+(write (postorder '(a(b(c))(d(e)(f)))))
+

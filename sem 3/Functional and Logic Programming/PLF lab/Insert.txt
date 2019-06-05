@@ -1,0 +1,124 @@
+USE [Phone Store]
+GO
+
+create or alter procedure TestInsert
+	@tableName varchar(40),
+	@nrOfInserts int
+as
+BEGIN
+
+	declare @SQLcmd varchar(100)
+	declare @PK int
+	
+	while @nrOfInserts > 0
+	BEGIN
+		set @SQLcmd = 'insert into ' + @tableName + ' values('
+		--set @PK = rand() * 10000
+		--declare @SQLPK nvarchar(50)
+		--set @SQLPK= (SELECT   B.COLUMN_NAME
+		--FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS A, INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE B
+		--WHERE CONSTRAINT_TYPE = 'PRIMARY KEY' AND A.CONSTRAINT_NAME = B.CONSTRAINT_NAME and   B.TABLE_NAME = @tableName
+		--)
+		
+		--DECLARE @boolvalue int
+		--DECLARE @querystring nvarchar(50)
+		--declare @counts int
+		--set @querystring = 'select @cnt=count(*) from ' +
+		--	@tableName  +' where '+ @SQLPK +' = ' + convert(varchar(50),@PK)
+		--exec sp_executesql @querystring, N' @cnt int OUTPUT, @SQLPK nvarchar(50), @PK int, @tableName varchar(50)', @SQLPK=@SQLPK, @tableName=@tableName, @PK = @PK, @cnt = @counts OUTPUT
+		
+		--while ( @counts != 0) 
+		--BEGIN
+		--	set @PK = rand() * 10000
+		--	exec sp_executesql @querystring, N' @cnt int OUTPUT, @SQLPK nvarchar(50), @PK int, @tableName varchar(50)', @SQLPK=@SQLPK, @tableName=@tableName, @PK = @PK, @cnt = @counts OUTPUT
+		--END
+		set @SQLcmd += '20, ''tip' + convert(varchar(10),@nrOfInserts) + ''', ''company' + convert(varchar(10),@nrOfInserts) + ''', ' + convert(varchar(10),@nrOfInserts) + ', 20'
+		
+		set @SQLcmd += ');'
+		print @SQLcmd
+		exec (@SQLcmd)
+	set @nrOfInserts = @nrOfInserts - 1
+	END
+END
+go
+
+
+create or alter procedure TestInsert1
+	@tableName varchar(40),
+	@nrOfInserts int
+as
+BEGIN
+
+	declare @SQLcmd varchar(100)
+	declare @PK int
+	
+	while @nrOfInserts > 0
+	BEGIN
+		set @SQLcmd = 'insert into ' + @tableName + ' values('
+		set @SQLcmd += '1, ''19.12.2019 ' + convert(varchar(10),@nrOfInserts) + ''', 21' + ', 20'
+		
+		set @SQLcmd += ');'
+		print @SQLcmd
+		exec (@SQLcmd)
+	set @nrOfInserts = @nrOfInserts - 1
+	END
+END
+go
+
+create or alter procedure TestInsert2
+	@tableName varchar(40),
+	@nrOfInserts int
+as
+BEGIN
+
+	declare @SQLcmd varchar(100)
+	declare @PK int
+	
+	while @nrOfInserts > 0
+	BEGIN
+		set @SQLcmd = 'insert into ' + @tableName + ' values('
+		set @SQLcmd += convert(varchar(10),@nrOfInserts) + ', 200' + ', 2'
+		
+		set @SQLcmd += ');'
+		print @SQLcmd
+		exec (@SQLcmd)
+	set @nrOfInserts = @nrOfInserts - 1
+	END
+END
+go
+
+CREATE OR ALTER PROCEDURE TestDelete
+	@tableName varchar(40),
+	@nrOfDeletes int
+as
+BEGIN
+	DECLARE @SqlCommand nvarchar(100)
+	set @SQLCommand = 'DELETE TOP (' + convert(varchar(1000), @nrOfDeletes) + ') FROM ' + @tableName;
+	EXEC (@SQLCommand)
+END
+go
+
+
+
+INSERT INTO Tests VALUES('TestInsert')
+INSERT INTO Tests VALUES('TestInsert1')
+INSERT INTO Tests VALUES('TestInsert2')
+INSERT INTO Tests VALUES('TestView')
+INSERT INTO Tests VALUES('TestView1')
+INSERT INTO Tests VALUES('TestView2')
+INSERT INTO Tests VALUES('TestDelete')
+
+
+
+INSERT INTO TABLES VALUES('Supplies')
+INSERT INTO TABLES VALUES('Salaries')
+INSERT INTO TABLES VALUES('Components')
+
+
+INSERT INTO TestTables VALUES(1,1,100,1)
+INSERT INTO TestTables VALUES(2,2,1000,1)
+INSERT INTO TestTables VALUES(3,3,120000,1)
+INSERT INTO TestTables VALUES(4,1,100,1)
+INSERT INTO TestTables VALUES(4,2,1000,1)
+INSERT INTO TestTables VALUES(4,3,120000,1)
+

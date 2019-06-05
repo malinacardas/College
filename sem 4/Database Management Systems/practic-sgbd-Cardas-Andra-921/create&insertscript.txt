@@ -1,0 +1,51 @@
+
+
+CREATE TABLE Library(
+	LId int primary key identity(1,1),
+	LibName varchar(50),
+	LibLocation varchar(50)
+	)
+
+CREATE TABLE Publisher(
+	PId int primary key identity(1,1),
+	PubName varchar(50)
+	)
+
+CREATE TABLE Affiliation(
+	AId int primary key identity(1,1),
+	AffName varchar(50)
+	)
+
+CREATE TABLE Reader(
+	RId int primary key identity(1,1),
+	RName varchar(50),
+	Rpreference varchar(50),
+	AId int references Affiliation(AId)
+)
+
+CREATE TABLE Book(
+	BId int primary key identity(1,1),
+	BTitle varchar(50),
+	BCategory varchar(50),
+	PId int references Publisher(PId),
+	LId int references Library(LId)
+	)
+CREATE TABLE Author(
+	ATId int primary key identity(1,1),
+	ATName varchar(50),
+	BId int references Book(BId)
+	)
+CREATE TABLE BookReader(
+	BId int references Book(BId),
+	RId int references Reader(RId)
+	primary key(BId, RId)
+	)
+
+insert into Library values ('name1','loc1'),('name2','loc2'),('name3','loc3')
+insert into Publisher values('name1'),('name2'),('name3')
+insert into Book values('title1','cat1',1,1),
+						('title2','cat2',1,2),
+						('title3','cat3',2,2),
+						('title4','cat4',2,3),
+						('title5','cat5',3,1),
+						('title6','cat6',3,3)

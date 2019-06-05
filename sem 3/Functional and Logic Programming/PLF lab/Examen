@@ -1,0 +1,82 @@
+;write a lisp program to det the nr of sublist at any level having an odd nr of nonnumeric atoms on even levels. 
+;ex: (a (b 2) (1 c 4) (1 (6 f))) (((g) 4) 6))
+
+(defun countN(l)
+(cond
+((null l) 0)
+((and (not (numberp l)) (atom l)) 1)
+((atom l) 0)
+(t (apply '+ (mapcar 'countN l)))
+))
+
+;(write (countN '(1 2 a b 4 d)))
+
+(defun getEvenLevels(l cl)
+(cond
+((and (= (mod cl 2) 0) (atom l)) (list l))
+((atom l) nil)
+(t (apply 'append (mapcar (lambda(x) (getEvenLevels x (+ 1 cl))) L))))
+)
+
+(defun good(l)
+(and (listp l) (= (mod (countN (getEvenLevels l 0)) 2) 1))
+)
+
+(defun countLists(l)
+(cond
+((good l) (+ 1 (apply '+ (mapcar 'countLists l))))
+((atom l ) 0)
+(t (apply '+ (mapcar 'countLists l)))
+))
+
+;(write (countLists '(a (b 2) (1 c 4) (1 (6 f)) (((g) 4) 6))))
+
+;write a program to remove an element N in a list
+(defun removen (l n)
+(cond
+((null l) nil)
+((equal n (car l)) (removen (cdr l) n))
+((atom (car l)) (cons (car l) (removen (cdr l) n)))
+(t (cons (removen (car l) n) (removen (cdr l) n)))
+))
+;(write (removen '(1 2 3 4 5 (2) 2 4 2 5)'2))
+
+;write a program to replace every even number with their natural succesor
+(defun replacen(l)
+(cond
+((null l) nil)
+((and (numberp l)(equal 0 (mod l 2))) (+ 1 l))
+((atom l) l)
+(t (cons (replacen (car l)) (replacen (cdr l))))
+))
+;(write (replacen2 '(1 2 3 4 (5 7 (9) 10))))
+
+;write a program to replace every even number with their natural succesor using mapcar
+(defun replacen2 (l)
+(cond 
+((null l) nil)
+((and (numberp l) (equal (mod l 2) 0)) (list (+ 1 l)))
+((atom l) (list l))
+(t (list (apply 'append (mapcar 'replacen2 l))))
+))
+;(write (replacen2 '(1 2 3 4 (5 7 (9)10))))
+
+;write a lisp program to determine the nr of sublists of a given list, where the maximal numeric atom on all odd levels is even
+
+;write a lisp program to det the nr of sublists where the last atom is nonnumeric
+;last atom is nonnumeric
+(defun lastn(l)
+(cond
+((null l) nil)
+((not (numberp (car (reverse l)))) t)
+(t nil)
+))
+;(write (lastn '(1 2 3 4 a 5)))
+(defun counts(l)
+(cond
+((and (listp l)(lastn l)) (+ 1 (apply '+ (mapcar 'counts l))))
+((atom l) 0)
+(t (apply '+ (mapcar 'counts l)))
+))
+(write (counts '(1 2 3 (a b (2 g) g) 8)))
+

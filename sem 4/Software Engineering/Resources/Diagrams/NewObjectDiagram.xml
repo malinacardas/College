@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<XMI xmlns:GXML="//lci.cs.ubbcluj.ro/gxml" xmlns:UML="//org.omg/UML/1.3" xmi.version="1.1">
+ <XMI.header>
+  <XMI.documentation>
+   <XMI.exporter>ocle 2.0</XMI.exporter>
+   <XMI.exporterVersion>1.0</XMI.exporterVersion>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name="GXAPI" xmi.version="0.1"/>
+ </XMI.header>
+ <XMI.content>
+  <GXML:ObjectDiagram background="java.awt.Color[r=255,g=255,b=255]" gridVisible="false" isLocked="false" name="NewObjectDiagram" xmi.id="S.1" xmlns:GXML="http://lci/xml">
+   <GXML:ObjectDiagram.owner>
+    <UML:Collaboration href="../HotelR.xml|S.232" xml:link="simple" xmlns:UML="http://lci/xml"/>
+   </GXML:ObjectDiagram.owner>
+   <GXML:ObjectDiagram.flat>
+    <GXML:ObjectCell allowsChildren="true" children="S.5" xmi.id="S.2">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.3"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="moveable" values="true" xmi.id="S.4">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.128" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.128" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.7" target="S.8" xmi.id="S.6">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.9">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.258" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.258" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:ObjectCell allowsChildren="true" children="S.7" xmi.id="S.10">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.11"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="moveable" values="true" xmi.id="S.12">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.125" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.125" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.15" xmi.id="S.13">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.14"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:ObjectCell allowsChildren="true" children="S.19" xmi.id="S.16">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.17"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="moveable" values="true" xmi.id="S.18">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.156" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.156" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:ObjectCell allowsChildren="true" children="S.23" xmi.id="S.20">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.21"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.22">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.133" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.133" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.20" xmi.id="S.23">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.24"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:ObjectCell allowsChildren="true" children="S.28" xmi.id="S.25">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.26"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.27">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.195" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.195" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:ObjectCell allowsChildren="true" children="S.32" xmi.id="S.29">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.30"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.31">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.193" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.193" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.8" target="S.34" xmi.id="S.33">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.35">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.281" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.281" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:ObjectCell allowsChildren="true" children="S.39" xmi.id="S.36">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.37"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.38">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.274" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.274" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:ObjectCell allowsChildren="true" children="S.43" xmi.id="S.40">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.41"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.42">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.194" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.194" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.8" target="S.45" xmi.id="S.44">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.46">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.279" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.279" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:ObjectCell allowsChildren="true" children="S.50" xmi.id="S.47">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.48"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="moveable" values="true" xmi.id="S.49">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.249" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.249" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.52" xmi.id="S.8">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.51"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:DefaultPort allowsChildren="false" parent="S.55" xmi.id="S.53">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.54"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:ObjectCell allowsChildren="true" children="S.13" xmi.id="S.15">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.56"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="moveable" values="true" xmi.id="S.57">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.132" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.132" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:ObjectCell allowsChildren="true" children="S.61" xmi.id="S.58">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.59"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.60">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.197" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.197" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.29" xmi.id="S.32">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.62"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:DefaultPort allowsChildren="false" parent="S.16" xmi.id="S.19">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.63"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:DefaultPort allowsChildren="false" parent="S.66" xmi.id="S.64">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.65"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:DefaultPort allowsChildren="false" parent="S.69" xmi.id="S.67">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.68"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:ObjectCell allowsChildren="true" children="S.67" xmi.id="S.69">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.70"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="moveable" values="true" xmi.id="S.71">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.237" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.237" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:ObjectCell allowsChildren="true" children="S.45" xmi.id="S.72">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.73"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.74">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.129" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.129" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.58" xmi.id="S.61">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.75"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.19" target="S.77" xmi.id="S.76">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.78">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.192" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.192" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:DefaultPort allowsChildren="false" parent="S.81" xmi.id="S.79">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.80"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:ObjectCell allowsChildren="true" children="S.34" xmi.id="S.82">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.83"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.84">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.130" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.130" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.25" xmi.id="S.28">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.85"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:DefaultPort allowsChildren="false" parent="S.10" xmi.id="S.7">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.86"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:ObjectCell allowsChildren="true" children="S.90" xmi.id="S.87">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.88"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.89">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.191" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.191" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:ObjectCell allowsChildren="true" children="S.94" xmi.id="S.91">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.92"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.93">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.192" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.192" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:ObjectCell allowsChildren="true" children="S.98" xmi.id="S.95">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.96"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.97">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.134" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.134" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:ObjectCell allowsChildren="true" children="S.8" xmi.id="S.52">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.99"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="moveable" values="true" xmi.id="S.100">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.244" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.244" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.2" xmi.id="S.5">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.101"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:DefaultPort allowsChildren="false" parent="S.95" xmi.id="S.98">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.102"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:DefaultPort allowsChildren="false" parent="S.72" xmi.id="S.45">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.103"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:DefaultPort allowsChildren="false" parent="S.82" xmi.id="S.34">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.104"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:ObjectCell allowsChildren="true" children="S.108" xmi.id="S.105">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.106"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.107">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.196" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.196" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.91" xmi.id="S.94">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.109"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:ObjectCell allowsChildren="true" children="S.64" xmi.id="S.66">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.110"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="moveable" values="true" xmi.id="S.111">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.286" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.286" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.87" xmi.id="S.90">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.112"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:ObjectCell allowsChildren="true" children="S.53" xmi.id="S.55">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.113"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.114">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.127" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.127" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.36" xmi.id="S.39">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.115"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:DefaultPort allowsChildren="false" parent="S.40" xmi.id="S.43">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.116"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:DefaultPort allowsChildren="false" parent="S.119" xmi.id="S.117">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.118"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.50" target="S.13" xmi.id="S.120">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.121">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.285" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.285" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:ObjectCell allowsChildren="true" children="S.79" xmi.id="S.81">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.122"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="moveable" values="true" xmi.id="S.123">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.155" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.155" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.105" xmi.id="S.108">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.124"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.19" target="S.5" xmi.id="S.125">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.126">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.191" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.191" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:DefaultPort allowsChildren="false" parent="S.47" xmi.id="S.50">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.127"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:ObjectCell allowsChildren="true" children="S.117" xmi.id="S.119">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.128"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.129">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.267" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.267" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:ObjectCell allowsChildren="true" children="S.77" xmi.id="S.130">
+     <GXML:ObjectCell.property>
+      <GXML:ObjectGProperty bodyfontSize="11" fillColor="java.awt.Color[r=255,g=255,b=255]" outlineColor="java.awt.Color[r=0,g=0,b=0]" outlineWidth="1" selectionColor="java.awt.Color[r=255,g=0,b=0]" titlefontSize="12" xmi.id="S.131"/>
+     </GXML:ObjectCell.property>
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.132">
+       <GXML:HashtableStrings.value>
+        <UML:Object href="../HotelR.xml|S.131" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Object href="../HotelR.xml|S.131" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:ObjectCell>
+    <GXML:DefaultPort allowsChildren="false" parent="S.130" xmi.id="S.77">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings xmi.id="S.133"/>
+     </GXML:DefaultGraphCell.attributes>
+    </GXML:DefaultPort>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.67" target="S.53" xmi.id="S.134">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.135">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.262" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.262" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.7" target="S.64" xmi.id="S.136">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.137">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.291" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.291" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.13" target="S.79" xmi.id="S.138">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.139">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.194" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.194" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.7" target="S.67" xmi.id="S.140">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.141">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.254" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.254" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.19" target="S.13" xmi.id="S.142">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.143">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.193" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.193" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.64" target="S.98" xmi.id="S.144">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.145">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.295" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.295" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.7" target="S.79" xmi.id="S.146">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.147">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.169" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.169" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.79" target="S.98" xmi.id="S.148">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.149">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.196" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.196" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.19" target="S.98" xmi.id="S.150">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.151">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.197" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.197" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.19" target="S.23" xmi.id="S.152">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.153">
+       <GXML:HashtableStrings.value>
+        <UML:LinkObject href="../HotelR.xml|S.195" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:LinkObject href="../HotelR.xml|S.195" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.67" target="S.5" xmi.id="S.154">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.155">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.266" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.266" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.64" target="S.23" xmi.id="S.156">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.157">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.294" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.294" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.7" target="S.50" xmi.id="S.158">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.159">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.259" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.259" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.7" target="S.19" xmi.id="S.160">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.161">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.168" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.168" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+    <GXML:SpecialEdge allowsChildren="true" isRouted="false" source="S.50" target="S.77" xmi.id="S.162">
+     <GXML:DefaultGraphCell.attributes>
+      <GXML:HashtableStrings keys="lineBegin editable linewidth lineEnd" values="0 false 1.0 0" xmi.id="S.163">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.284" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+     </GXML:DefaultGraphCell.attributes>
+     <GXML:DefaultMutableTreeNode.userObject>
+      <UML:Link href="../HotelR.xml|S.284" xml:link="simple" xmlns:UML="http://lci/xml"/>
+     </GXML:DefaultMutableTreeNode.userObject>
+    </GXML:SpecialEdge>
+   </GXML:ObjectDiagram.flat>
+   <GXML:ObjectDiagram.cells>
+    <GXML:SpecialEdge xmi.idref="S.6"/>
+    <GXML:SpecialEdge xmi.idref="S.158"/>
+    <GXML:SpecialEdge xmi.idref="S.140"/>
+    <GXML:SpecialEdge xmi.idref="S.134"/>
+    <GXML:SpecialEdge xmi.idref="S.154"/>
+    <GXML:SpecialEdge xmi.idref="S.125"/>
+    <GXML:ObjectCell xmi.idref="S.69"/>
+    <GXML:ObjectCell xmi.idref="S.55"/>
+    <GXML:ObjectCell xmi.idref="S.2"/>
+    <GXML:SpecialEdge xmi.idref="S.44"/>
+    <GXML:ObjectCell xmi.idref="S.72"/>
+    <GXML:SpecialEdge xmi.idref="S.33"/>
+    <GXML:ObjectCell xmi.idref="S.52"/>
+    <GXML:ObjectCell xmi.idref="S.82"/>
+    <GXML:ObjectCell xmi.idref="S.130"/>
+    <GXML:SpecialEdge xmi.idref="S.162"/>
+    <GXML:SpecialEdge xmi.idref="S.120"/>
+    <GXML:ObjectCell xmi.idref="S.47"/>
+    <GXML:SpecialEdge xmi.idref="S.136"/>
+    <GXML:ObjectCell xmi.idref="S.10"/>
+    <GXML:ObjectCell xmi.idref="S.95"/>
+    <GXML:SpecialEdge xmi.idref="S.156"/>
+    <GXML:SpecialEdge xmi.idref="S.144"/>
+    <GXML:ObjectCell xmi.idref="S.66"/>
+    <GXML:SpecialEdge xmi.idref="S.76"/>
+    <GXML:SpecialEdge xmi.idref="S.142"/>
+    <GXML:ObjectCell xmi.idref="S.15"/>
+    <GXML:SpecialEdge xmi.idref="S.138"/>
+    <GXML:ObjectCell xmi.idref="S.29"/>
+    <GXML:SpecialEdge xmi.idref="S.152"/>
+    <GXML:SpecialEdge xmi.idref="S.148"/>
+    <GXML:ObjectCell xmi.idref="S.105"/>
+    <GXML:ObjectCell xmi.idref="S.81"/>
+    <GXML:ObjectCell xmi.idref="S.16"/>
+    <GXML:SpecialEdge xmi.idref="S.150"/>
+    <GXML:ObjectCell xmi.idref="S.58"/>
+    <GXML:ObjectCell xmi.idref="S.20"/>
+    <GXML:ObjectCell xmi.idref="S.25"/>
+    <GXML:ObjectCell xmi.idref="S.87"/>
+    <GXML:ObjectCell xmi.idref="S.91"/>
+    <GXML:ObjectCell xmi.idref="S.40"/>
+    <GXML:SpecialEdge xmi.idref="S.160"/>
+    <GXML:SpecialEdge xmi.idref="S.146"/>
+    <GXML:ObjectCell xmi.idref="S.119"/>
+    <GXML:ObjectCell xmi.idref="S.36"/>
+   </GXML:ObjectDiagram.cells>
+   <GXML:ObjectDiagram.relationViews>
+    <GXML:SpecialEdge xmi.idref="S.140"/>
+    <GXML:SpecialEdge xmi.idref="S.6"/>
+    <GXML:SpecialEdge xmi.idref="S.158"/>
+    <GXML:SpecialEdge xmi.idref="S.134"/>
+    <GXML:SpecialEdge xmi.idref="S.154"/>
+    <GXML:SpecialEdge xmi.idref="S.160"/>
+    <GXML:SpecialEdge xmi.idref="S.146"/>
+    <GXML:SpecialEdge xmi.idref="S.125"/>
+    <GXML:SpecialEdge xmi.idref="S.44"/>
+    <GXML:SpecialEdge xmi.idref="S.33"/>
+    <GXML:SpecialEdge xmi.idref="S.162"/>
+    <GXML:SpecialEdge xmi.idref="S.120"/>
+    <GXML:SpecialEdge xmi.idref="S.136"/>
+    <GXML:SpecialEdge xmi.idref="S.156"/>
+    <GXML:SpecialEdge xmi.idref="S.144"/>
+    <GXML:SpecialEdge xmi.idref="S.76"/>
+    <GXML:SpecialEdge xmi.idref="S.142"/>
+    <GXML:SpecialEdge xmi.idref="S.138"/>
+    <GXML:SpecialEdge xmi.idref="S.152"/>
+    <GXML:SpecialEdge xmi.idref="S.148"/>
+    <GXML:SpecialEdge xmi.idref="S.150"/>
+   </GXML:ObjectDiagram.relationViews>
+   <GXML:ObjectDiagram.connectionSet>
+    <GXML:ConnectionSet edges="S.142 S.156 S.152 S.138 S.134 S.150 S.158 S.125 S.144 S.148 S.146 S.120 S.160 S.136 S.44 S.6 S.76 S.33 S.162 S.154 S.140" xmi.id="S.164">
+     <GXML:ConnectionSet.connections>
+      <GXML:ConnectionSet_GXConnection edge="S.33" isSource="true" port="S.8" xmi.id="S.165"/>
+      <GXML:ConnectionSet_GXConnection edge="S.142" isSource="false" port="S.13" xmi.id="S.166"/>
+      <GXML:ConnectionSet_GXConnection edge="S.158" isSource="true" port="S.7" xmi.id="S.167"/>
+      <GXML:ConnectionSet_GXConnection edge="S.134" isSource="false" port="S.53" xmi.id="S.168"/>
+      <GXML:ConnectionSet_GXConnection edge="S.152" isSource="false" port="S.23" xmi.id="S.169"/>
+      <GXML:ConnectionSet_GXConnection edge="S.140" isSource="false" port="S.67" xmi.id="S.170"/>
+      <GXML:ConnectionSet_GXConnection edge="S.140" isSource="true" port="S.7" xmi.id="S.171"/>
+      <GXML:ConnectionSet_GXConnection edge="S.142" isSource="true" port="S.19" xmi.id="S.172"/>
+      <GXML:ConnectionSet_GXConnection edge="S.146" isSource="false" port="S.79" xmi.id="S.173"/>
+      <GXML:ConnectionSet_GXConnection edge="S.162" isSource="true" port="S.50" xmi.id="S.174"/>
+      <GXML:ConnectionSet_GXConnection edge="S.154" isSource="false" port="S.5" xmi.id="S.175"/>
+      <GXML:ConnectionSet_GXConnection edge="S.154" isSource="true" port="S.67" xmi.id="S.176"/>
+      <GXML:ConnectionSet_GXConnection edge="S.162" isSource="false" port="S.77" xmi.id="S.177"/>
+      <GXML:ConnectionSet_GXConnection edge="S.160" isSource="false" port="S.19" xmi.id="S.178"/>
+      <GXML:ConnectionSet_GXConnection edge="S.152" isSource="true" port="S.19" xmi.id="S.179"/>
+      <GXML:ConnectionSet_GXConnection edge="S.156" isSource="false" port="S.23" xmi.id="S.180"/>
+      <GXML:ConnectionSet_GXConnection edge="S.125" isSource="false" port="S.5" xmi.id="S.181"/>
+      <GXML:ConnectionSet_GXConnection edge="S.33" isSource="false" port="S.34" xmi.id="S.182"/>
+      <GXML:ConnectionSet_GXConnection edge="S.160" isSource="true" port="S.7" xmi.id="S.183"/>
+      <GXML:ConnectionSet_GXConnection edge="S.136" isSource="true" port="S.7" xmi.id="S.184"/>
+      <GXML:ConnectionSet_GXConnection edge="S.144" isSource="false" port="S.98" xmi.id="S.185"/>
+      <GXML:ConnectionSet_GXConnection edge="S.76" isSource="true" port="S.19" xmi.id="S.186"/>
+      <GXML:ConnectionSet_GXConnection edge="S.136" isSource="false" port="S.64" xmi.id="S.187"/>
+      <GXML:ConnectionSet_GXConnection edge="S.146" isSource="true" port="S.7" xmi.id="S.188"/>
+      <GXML:ConnectionSet_GXConnection edge="S.134" isSource="true" port="S.67" xmi.id="S.189"/>
+      <GXML:ConnectionSet_GXConnection edge="S.120" isSource="true" port="S.50" xmi.id="S.190"/>
+      <GXML:ConnectionSet_GXConnection edge="S.148" isSource="false" port="S.98" xmi.id="S.191"/>
+      <GXML:ConnectionSet_GXConnection edge="S.76" isSource="false" port="S.77" xmi.id="S.192"/>
+      <GXML:ConnectionSet_GXConnection edge="S.150" isSource="false" port="S.98" xmi.id="S.193"/>
+      <GXML:ConnectionSet_GXConnection edge="S.148" isSource="true" port="S.79" xmi.id="S.194"/>
+      <GXML:ConnectionSet_GXConnection edge="S.150" isSource="true" port="S.19" xmi.id="S.195"/>
+      <GXML:ConnectionSet_GXConnection edge="S.158" isSource="false" port="S.50" xmi.id="S.196"/>
+      <GXML:ConnectionSet_GXConnection edge="S.120" isSource="false" port="S.13" xmi.id="S.197"/>
+      <GXML:ConnectionSet_GXConnection edge="S.156" isSource="true" port="S.64" xmi.id="S.198"/>
+      <GXML:ConnectionSet_GXConnection edge="S.125" isSource="true" port="S.19" xmi.id="S.199"/>
+      <GXML:ConnectionSet_GXConnection edge="S.138" isSource="false" port="S.79" xmi.id="S.200"/>
+      <GXML:ConnectionSet_GXConnection edge="S.6" isSource="false" port="S.8" xmi.id="S.201"/>
+      <GXML:ConnectionSet_GXConnection edge="S.44" isSource="false" port="S.45" xmi.id="S.202"/>
+      <GXML:ConnectionSet_GXConnection edge="S.138" isSource="true" port="S.13" xmi.id="S.203"/>
+      <GXML:ConnectionSet_GXConnection edge="S.144" isSource="true" port="S.64" xmi.id="S.204"/>
+      <GXML:ConnectionSet_GXConnection edge="S.6" isSource="true" port="S.7" xmi.id="S.205"/>
+      <GXML:ConnectionSet_GXConnection edge="S.44" isSource="true" port="S.8" xmi.id="S.206"/>
+     </GXML:ConnectionSet.connections>
+    </GXML:ConnectionSet>
+   </GXML:ObjectDiagram.connectionSet>
+   <GXML:ObjectDiagram.viewAttributes>
+    <GXML:Hashtable keys="S.134 S.142 S.64 S.25 S.39 S.154 S.53 S.44 S.140 S.150 S.95 S.90 S.58 S.16 S.81 S.32 S.156 S.125 S.148 S.162 S.6 S.138 S.120 S.33 S.43 S.7 S.69 S.15 S.28 S.23 S.47 S.52 S.77 S.130 S.117 S.66 S.108 S.91 S.67 S.105 S.40 S.36 S.55 S.119 S.72 S.2 S.160 S.45 S.94 S.152 S.146 S.50 S.20 S.10 S.79 S.61 S.34 S.87 S.158 S.136 S.144 S.76 S.29 S.13 S.5 S.98 S.19 S.82 S.8" xmi.id="S.207">
+     <GXML:Hashtable.values>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=607,y=150],_java.awt.Point[x=872,y=103]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.208"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=1310,y=209],_java.awt.Point[x=912,y=626]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.209"/>
+      <GXML:HashtableStrings xmi.id="S.210"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=1178,y=351,width=139,height=93] true" xmi.id="S.211"/>
+      <GXML:HashtableStrings xmi.id="S.212"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=607,y=150],_java.awt.Point[x=879,y=206]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.213"/>
+      <GXML:HashtableStrings xmi.id="S.214"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=717,y=358],_java.awt.Point[x=922,y=284]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.215"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=433,y=448],_java.awt.Point[x=607,y=150]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.216"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=1310,y=209],_java.awt.Point[x=1658,y=213],_java.awt.Point[x=1661,y=783],_java.awt.Point[x=907,y=799]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.217"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=855,y=773,width=103,height=50] true" xmi.id="S.218"/>
+      <GXML:HashtableStrings xmi.id="S.219"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=1497,y=332,width=190,height=94] true" xmi.id="S.220"/>
+      <GXML:HashtableStrings keys="bounds moveable opaque" values="java.awt.Rectangle[x=1251,y=174,width=116,height=68] true true" xmi.id="S.221"/>
+      <GXML:HashtableStrings keys="bounds moveable opaque" values="java.awt.Rectangle[x=1330,y=523,width=138,height=55] true true" xmi.id="S.222"/>
+      <GXML:HashtableStrings xmi.id="S.223"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=675,y=743],_java.awt.Point[x=910,y=702]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.224"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=1310,y=209],_java.awt.Point[x=879,y=206]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.225"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=1400,y=551],_java.awt.Point[x=907,y=799]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.226"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=678,y=587],_java.awt.Point[x=910,y=513]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.227"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=433,y=448],_java.awt.Point[x=717,y=358]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.228"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=912,y=626],_java.awt.Point[x=1400,y=551]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.229"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=678,y=587],_java.awt.Point[x=912,y=626]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.230"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=717,y=358],_java.awt.Point[x=932,y=383]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.231"/>
+      <GXML:HashtableStrings xmi.id="S.232"/>
+      <GXML:HashtableStrings xmi.id="S.233"/>
+      <GXML:HashtableStrings keys="bounds moveable opaque" values="java.awt.Rectangle[x=526,y=121,width=160,height=57] true true" xmi.id="S.234"/>
+      <GXML:HashtableStrings keys="bounds moveable opaque" values="java.awt.Rectangle[x=853,y=598,width=117,height=55] true true" xmi.id="S.235"/>
+      <GXML:HashtableStrings xmi.id="S.236"/>
+      <GXML:HashtableStrings xmi.id="S.237"/>
+      <GXML:HashtableStrings keys="bounds moveable opaque" values="java.awt.Rectangle[x=598,y=557,width=158,height=59] true true" xmi.id="S.238"/>
+      <GXML:HashtableStrings keys="bounds moveable opaque" values="java.awt.Rectangle[x=630,y=333,width=172,height=48] true true" xmi.id="S.239"/>
+      <GXML:HashtableStrings xmi.id="S.240"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=853,y=488,width=113,height=48] true" xmi.id="S.241"/>
+      <GXML:HashtableStrings xmi.id="S.242"/>
+      <GXML:HashtableStrings keys="bounds moveable opaque" values="java.awt.Rectangle[x=601,y=716,width=146,height=53] true true" xmi.id="S.243"/>
+      <GXML:HashtableStrings xmi.id="S.244"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=1010,y=279,width=129,height=89] true" xmi.id="S.245"/>
+      <GXML:HashtableStrings xmi.id="S.246"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=1035,y=659,width=136,height=69] true" xmi.id="S.247"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=1041,y=556,width=149,height=89] true" xmi.id="S.248"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=209,y=183,width=152,height=95] true" xmi.id="S.249"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=807,y=74,width=129,height=57] true" xmi.id="S.250"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=208,y=64,width=142,height=95] true" xmi.id="S.251"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=854,y=256,width=135,height=54] true" xmi.id="S.252"/>
+      <GXML:HashtableStrings keys="bounds moveable opaque" values="java.awt.Rectangle[x=805,y=174,width=147,height=62] true true" xmi.id="S.253"/>
+      <GXML:HashtableStrings keys="lineEnd lineBegin labelposition points linewidth editable" values="0 0 java.awt.Point[x=500,y=500] [java.awt.Point[x=433,y=448],_java.awt.Point[x=431,y=846],_java.awt.Point[x=1313,y=848],_java.awt.Point[x=1310,y=209]] 1.0 false" xmi.id="S.254">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.168" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+      <GXML:HashtableStrings xmi.id="S.255"/>
+      <GXML:HashtableStrings xmi.id="S.256"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=1310,y=209],_java.awt.Point[x=910,y=702]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.257"/>
+      <GXML:HashtableStrings keys="lineEnd lineBegin labelposition points linewidth editable" values="0 0 java.awt.Point[x=500,y=500] [java.awt.Point[x=433,y=448],_java.awt.Point[x=434,y=56],_java.awt.Point[x=1399,y=60],_java.awt.Point[x=1400,y=551]] 1.0 false" xmi.id="S.258">
+       <GXML:HashtableStrings.value>
+        <UML:Link href="../HotelR.xml|S.169" xml:link="simple" xmlns:UML="http://lci/xml"/>
+       </GXML:HashtableStrings.value>
+      </GXML:HashtableStrings>
+      <GXML:HashtableStrings xmi.id="S.259"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=852,y=675,width=115,height=53] true" xmi.id="S.260"/>
+      <GXML:HashtableStrings keys="bounds moveable opaque" values="java.awt.Rectangle[x=369,y=410,width=127,height=74] true true" xmi.id="S.261"/>
+      <GXML:HashtableStrings xmi.id="S.262"/>
+      <GXML:HashtableStrings xmi.id="S.263"/>
+      <GXML:HashtableStrings xmi.id="S.264"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=1032,y=146,width=181,height=99] true" xmi.id="S.265"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=433,y=448],_java.awt.Point[x=678,y=587]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.266"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=433,y=448],_java.awt.Point[x=675,y=743]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.267"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=675,y=743],_java.awt.Point[x=907,y=799]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.268"/>
+      <GXML:HashtableStrings keys="lineEnd linewidth editable points lineBegin labelposition" values="0 1.0 false [java.awt.Point[x=1310,y=209],_java.awt.Point[x=910,y=513]] 0 java.awt.Point[x=500,y=500]" xmi.id="S.269"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=1022,y=440,width=129,height=89] true" xmi.id="S.270"/>
+      <GXML:HashtableStrings xmi.id="S.271"/>
+      <GXML:HashtableStrings xmi.id="S.272"/>
+      <GXML:HashtableStrings xmi.id="S.273"/>
+      <GXML:HashtableStrings xmi.id="S.274"/>
+      <GXML:HashtableStrings keys="bounds opaque" values="java.awt.Rectangle[x=859,y=350,width=145,height=64] true" xmi.id="S.275"/>
+      <GXML:HashtableStrings xmi.id="S.276"/>
+     </GXML:Hashtable.values>
+    </GXML:Hashtable>
+   </GXML:ObjectDiagram.viewAttributes>
+   <GXML:ObjectDiagram.objectViews>
+    <GXML:ObjectCell xmi.idref="S.10"/>
+    <GXML:ObjectCell xmi.idref="S.69"/>
+    <GXML:ObjectCell xmi.idref="S.52"/>
+    <GXML:ObjectCell xmi.idref="S.47"/>
+    <GXML:ObjectCell xmi.idref="S.55"/>
+    <GXML:ObjectCell xmi.idref="S.2"/>
+    <GXML:ObjectCell xmi.idref="S.81"/>
+    <GXML:ObjectCell xmi.idref="S.16"/>
+    <GXML:ObjectCell xmi.idref="S.119"/>
+    <GXML:ObjectCell xmi.idref="S.36"/>
+    <GXML:ObjectCell xmi.idref="S.87"/>
+    <GXML:ObjectCell xmi.idref="S.72"/>
+    <GXML:ObjectCell xmi.idref="S.82"/>
+    <GXML:ObjectCell xmi.idref="S.130"/>
+    <GXML:ObjectCell xmi.idref="S.15"/>
+    <GXML:ObjectCell xmi.idref="S.66"/>
+    <GXML:ObjectCell xmi.idref="S.20"/>
+    <GXML:ObjectCell xmi.idref="S.95"/>
+    <GXML:ObjectCell xmi.idref="S.91"/>
+    <GXML:ObjectCell xmi.idref="S.29"/>
+    <GXML:ObjectCell xmi.idref="S.40"/>
+    <GXML:ObjectCell xmi.idref="S.25"/>
+    <GXML:ObjectCell xmi.idref="S.105"/>
+    <GXML:ObjectCell xmi.idref="S.58"/>
+   </GXML:ObjectDiagram.objectViews>
+   <GXML:ObjectDiagram.objects>
+    <UML:Object href="../HotelR.xml|S.125" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.237" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.244" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.249" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.127" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.128" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.155" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.156" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.267" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.274" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:LinkObject href="../HotelR.xml|S.191" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.129" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.130" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.131" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.132" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.286" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.133" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:Object href="../HotelR.xml|S.134" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:LinkObject href="../HotelR.xml|S.192" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:LinkObject href="../HotelR.xml|S.193" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:LinkObject href="../HotelR.xml|S.194" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:LinkObject href="../HotelR.xml|S.195" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:LinkObject href="../HotelR.xml|S.196" xml:link="simple" xmlns:UML="http://lci/xml"/>
+    <UML:LinkObject href="../HotelR.xml|S.197" xml:link="simple" xmlns:UML="http://lci/xml"/>
+   </GXML:ObjectDiagram.objects>
+  </GXML:ObjectDiagram>
+ </XMI.content>
+</XMI>

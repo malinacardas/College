@@ -1,0 +1,13 @@
+;write a function that inserts in a linear list a given atom A after 2nd,4th,6th ...element
+(defun addN (list elem pc )
+(cond
+((null list) nil)
+((equal 0 (mod pc 2)) (cons elem (addN list elem (+ 1 pc) )))
+(t (cons (car list)(addN (cdr list) elem ( + 1 pc))))
+))
+
+(defun addNMain (list elem)
+(addN list elem 1)
+)
+
+(write(addNMain '(1 2 3 4 5 6 7 8)'10))

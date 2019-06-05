@@ -1,0 +1,13 @@
+;8.Return the list of nodes of a tree of type 2 accesed inorder
+;inorder(tree:list)
+;inorder(l1,l2,...,ln)={[],if L=[]
+;                      inorder(l2,..,ln) U l1 U inorder(l3,..,ln)}
+
+(defun inorder (tree)
+(cond
+((null tree) nil)
+(t (append (inorder (cadr tree))
+(append (list (car tree)) (inorder (caddr tree
+)))
+))))
+(write(inorder '(a(b(c))(d(e)(f)))))

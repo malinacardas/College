@@ -1,0 +1,49 @@
+;l1-9c
+;write a function to determine the sum of two numbers in list representation, and returns the corresponding decimal number, withour transforming the representation of the number from list to number
+;we read the list in the reverse already
+;sum(l1,l2,...,ln,k1,k2,...,km,r)=(nil, if n=0 and m=0
+;                                =(l1,l2,...,ln, if m=0
+;                                =(k1,k2,...,km, if n=0
+;                                =(l1+k1) + (l2,l3,...,ln,k2,k3,...,km)
+
+;div(15 8)
+;(15-(15%8))/8=(15-7)/8=1
+(defun div(a b)
+  (/ (- a (mod a b)) b))
+
+(defun sum(l1 l2 remainder)
+(cond
+
+;if both lists are null and the remainder is null, return nil
+(
+(and(and(null l1) (null l2)) (= remainder 0))
+ nil)
+;if both lists are null, return the remainder
+(
+ (and (null l1) (null r1))
+ (list remainder)
+)
+;if the second list is null
+(
+(and (not (null l1)) (null l2))
+ (cons 
+  (list (mod (+ (car l1) remainder) 10))
+  (sum (cdr l1) nil ( div (+ (car l1) remainder) 10))
+))
+;if the first list is null
+(
+(and (null l1) (not (null l2)))
+(append 
+ (list (mod (+ (car l2) remainder) 10))
+ (sum nil (cdr l2) (div (+ ( car l2) remainder) 10))
+))
+;if both lists are not null
+(t
+ (append
+  (list (mod (+ (+ (car l1) (car l2)) remainder) 10))
+  (sum (cdr l1) (cdr l2) (div (+(+(car l1) (car l2)) remainder) 10))
+))
+
+))
+
+(write (sum '(8 2 5)'(2 3 4)'0))

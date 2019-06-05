@@ -1,0 +1,10 @@
+;list of nodes on the k-th level-2
+(defun nlevel (tree level n)
+(cond
+((null tree) nil)
+((equal n level) (list (car tree)))
+(t (append (nlevel (cadr tree) (+ level 1) n)
+           (nlevel (caddr tree) (+ level 1) n)
+))
+))
+(write (nlevel '(a(b(c))(d(e)(f)))'0'2))
